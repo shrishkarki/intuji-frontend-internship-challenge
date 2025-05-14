@@ -3,6 +3,14 @@
 
 @use "./base/base";
 @use "./base/reset";
-@use './base//typography';
+@use "./base/typography";
+
+
+@use "./components/navbar";
+@use "./components/hero";
+
+
+@use "./layout/main";
+@use "./layout/patners";
 
 @use "./pages/home";

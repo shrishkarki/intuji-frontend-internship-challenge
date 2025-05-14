@@ -20,7 +20,162 @@ html {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Manrope";
+  font-weight: 400;
+}
+
+.navbar {
+  padding: 3.8rem 11.7rem 0 12.1rem;
+}
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__menu {
+  display: flex;
+  column-gap: 2.6rem;
+  position: relative;
+}
+.navbar__item {
+  position: relative;
+}
+.navbar__link {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #000000;
+}
+.navbar__link--signup {
+  padding: 1.7rem 3.6rem;
+  background-color: #4F46BA;
+  color: #FFFFFF;
+  margin-left: 5rem;
+}
+.navbar__dropdown {
+  display: none;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.navbar__item--dropdown:hover .navbar__dropdown {
+  display: block;
+}
+
+.hero__container {
+  display: flex;
+}
+.hero__content {
+  padding: 15.1rem 0 9.8rem 12.1rem;
+  max-width: 75rem;
+}
+.hero__title {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #000000;
+  line-height: 8rem;
+  letter-spacing: -3%;
+}
+.hero__description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #64607D;
+  line-height: 3rem;
+  letter-spacing: -2%;
+  padding: 2.2rem 0 5.6rem;
+  max-width: 51rem;
+}
+.hero__button {
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -2%;
+}
+.hero__button--primary {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  padding: 1.5rem 3.8rem;
+  background-color: #3734A9;
+  border-radius: 4.7rem;
+  margin-right: 5rem;
+}
+.hero__button--secondary {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #3734A9;
+  line-height: 3rem;
+  letter-spacing: -2%;
+}
+.hero__button--polygon {
+  display: inline-block;
+  background-color: #22D497;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 4.7rem;
+  position: relative;
+  padding: 1.8rem 1.7rem;
+  margin-right: 1.1rem;
+}
+.hero__button--polygon img {
+  height: 1.8rem;
+  width: 1.8rem;
+  transform: translateX(40%);
+}
+.hero__checked {
+  display: flex;
+  column-gap: 2.4rem;
+  margin-top: 5.3rem;
+}
+.hero__checked-item {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.hero__checked-rightTick {
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  background-color: #3734A9;
+  margin-right: 0.8rem;
+}
+.hero__checked-text {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #757095;
+  line-height: 0.3rem;
+  letter-spacing: -2%;
+}
+.hero__image img {
+  width: 45.6rem;
+  height: 76rem;
+}
+
+.main-content {
+  background-color: #C9E7F2;
+  overflow-y: hidden;
+}
+
+.partners {
+  background-color: #F5F6F8;
+}
+.partners__container {
+  padding: 6.4rem 0 7.686rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partners__title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 3.6rem;
+}
+.partners__logos {
+  display: flex;
+  column-gap: 4.956rem;
 }
 
 .container {

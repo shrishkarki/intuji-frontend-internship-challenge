@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.navbar {
+    padding: 3.8rem 11.7rem 0 12.1rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: flex;
+        column-gap: 2.6rem;
+        position: relative;
+    }
+
+    &__item {
+        position: relative;
+        
+    }
+
+    &__link {
+
+
+        @include text-style($font-size-sm, $font-weight-regular, #000000);
+
+        &--signup {
+            padding: 1.7rem 3.6rem;
+            background-color: #4F46BA;
+            color:#FFFFFF;
+            margin-left:5rem;
+        }
+
+    }
+
+    &__dropdown {
+        
+        display: none;
+        font-size: 1.4rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    &__item--dropdown:hover &__dropdown {
+        display: block;
+    }
+
+
+}

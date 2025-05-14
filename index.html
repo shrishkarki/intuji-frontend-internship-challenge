@@ -6,46 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
 
-        <header class="navbar">
-            <nav class="navbar__container">
-                <a href="#" class="navbar__logo"><img src="./assets/images/AR Shakir.png"/></a>
-                <ul class="navbar__menu">
-                    <li class="navbar__item navbar__item--dropdown">
-                        <a href="#" class="navbar__link">Product</a>
-                        <ul class="navbar__dropdown">
-                            <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Product 1</a>
+        <main class="main-content">
+
+            <header class="navbar">
+                <nav class="navbar__container">
+                    <a href="#" class="navbar__logo"><img src="./assets/images/AR Shakir.png" /></a>
+                    <ul class="navbar__menu">
+                        <li class="navbar__item navbar__item--dropdown">
+                            <a href="#" class="navbar__link">Product <img src="./assets/icons/dropdown.svg" /></a>
+                            <ul class="navbar__dropdown">
+                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Prod</a>
+                                </li>
+                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Prod</a>
+                                </li>
+                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Prod</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item navbar__item--dropdown">
+                            <a href="#" class="navbar__link">Template <img src="./assets/icons/dropdown.svg" /></a>
+                            <ul class="navbar__dropdown">
+                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Temp</a>
+                                </li>
+                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Temp</a>
+                                </li>
+                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Temp</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">Blog</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">Pricing</a></li>
+                    </ul>
+                    <div class="navbar__actions">
+                        <a href="#" class="navbar__link navbar__link--signin">Sign In</a>
+                        <a href="#" class="navbar__link navbar__link--signup">Start Free</a>
+                    </div>
+                </nav>
+            </header>
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Managing freelance payments has never been easier</h1>
+                        <p class="hero__description">Yet bed any for travelling assistance indulgence unpleasing. Not
+                            thoughts all exercise blessing.</p>
+                        <div class="hero__buttons">
+                            <a href="#" class="hero__button hero__button--primary">Get Started</a>
+                            <a href="#" class="hero__button ">
+                               <span class="hero__button--polygon">
+                                <img
+                                    src="./assets/images/Polygon 2.png" />
+                                </span><span class="hero__button--secondary">See How it Works</span></a>
+                        </div>
+
+                        <ul class="hero__checked">
+                            <li class="hero__checked-item">
+                                <span class="hero__checked-rightTick"><img src="./assets/icons/rightTick.png" alt="Check Icon" class="hero__checked-icon" /></span>
+                                <span class="hero__checked-text">Free Register</span>
                             </li>
-                            <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Product 2</a>
-                            </li>
-                            <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Product 3</a>
+                            <li class="hero__checked-item">
+                                <span class="hero__checked-rightTick"><img src="./assets/icons/rightTick.png" alt="Check Icon" class="hero__checked-icon" /></span>
+                                <span class="hero__checked-text">Great Service</span>
                             </li>
                         </ul>
-                    </li>
-                    <li class="navbar__item navbar__item--dropdown">
-                        <a href="#" class="navbar__link">Template</a>
-                        <ul class="navbar__dropdown">
-                            <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Template 1</a>
-                            </li>
-                            <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Template 2</a>
-                            </li>
-                            <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Template 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar__item"><a href="#" class="navbar__link">Blog</a></li>
-                    <li class="navbar__item"><a href="#" class="navbar__link">Pricing</a></li>
-                </ul>
-                <div class="navbar__actions">
-                    <a href="#" class="navbar__link navbar__link--signin">Sign In</a>
-                    <a href="#" class="navbar__button navbar__button--signup">Sign Up</a>
+
+                    </div>
+                    <div class="hero__image">
+                        <img src="./assets/images/Group 686.png" alt="Hero Image" class="hero__image-img" />
+                    </div>
+
                 </div>
-            </nav>
-        </header>
+            </section>
+        </main>
+
+        <section class="partners">
+  <div class="partners__container">
+    <h2 class="partners__title">
+      Over 32k+ software businesses growing with AR Shakir.
+    </h2>
+    <div class="partners__logos">
+      <img src="./assets/images/Group (1).png" alt="Company 1 Logo" class="partners__logo" />
+      <img src="./assets/images/Group.png" alt="Company 2 Logo" class="partners__logo" />
+      <img src="./assets/images/Group (2).png" alt="Company 3 Logo" class="partners__logo" />
+      <img src="./assets/images/Group (3).png" alt="Company 3 Logo" class="partners__logo" />
+      <img src="./assets/images/Group (4).png" alt="Company 4 Logo" class="partners__logo" />
+      <img src="./assets/images/Group (5).png" alt="Company 5 Logo" class="partners__logo" />
+      <img src="./assets/images/Group (6).png" alt="Company 6 Logo" class="partners__logo" />
+      
+    </div>
+  </div>
+</section>
+
+
     </div>
 
 </body>

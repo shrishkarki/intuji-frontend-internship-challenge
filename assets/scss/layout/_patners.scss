@@ -1,0 +1,23 @@
+ @use "../abstracts/variables" as *;
+ @use "../abstracts/mixins" as *;
+.partners{
+    background-color: #F5F6F8;
+    &__container{
+        padding: 6.4rem 0 7.686rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__title{
+        @include text-style(2.2rem,400, #000000);
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 3.6rem;
+    }
+    &__logos{
+        display: flex;
+         column-gap: 4.956rem;
+    }
+}
