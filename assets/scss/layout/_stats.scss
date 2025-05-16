@@ -1,0 +1,88 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+
+
+// *{
+//   border: 1px solid red;
+// }
+.stats {
+  display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  background-color: #3734A9;
+  color: #ffffff;
+  position: relative;
+ 
+
+  // &__intro {
+  //   flex: 1;
+    
+  //   padding-right: 2rem;
+  // }
+  &__intro{
+    max-width: 25rem;
+    border-right: 2px solid #3D3D3D;
+    
+  }
+
+  &__title {
+    @include text-style(1.9rem,400,#FFFFFF);
+    line-height: 3.1rem;
+    letter-spacing: -1px;
+    padding: 8.2rem 2.9rem 8.1rem 9rem;
+    
+  }
+
+  &__data {
+    // flex: 3;
+    display: flex;
+     padding: 6.9rem 0 6.3rem;
+    // justify-content: space-around;
+    // text-align: center;
+    
+  }
+
+  &__item {
+    &--one{
+      margin-left: 6.5rem;
+    }
+    &--two{
+      margin-left:12.6rem;
+    }
+    &--three{
+      margin-left: 8.7rem;
+    }
+  }
+
+  &__value {
+   @include text-style(7.2rem,800,#FFFFFF);
+   line-height: 7.2rem;
+   letter-spacing: -1px;
+   
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    margin-top: 2.1rem;
+    column-gap: 1.6rem;
+   
+  }
+  &__text{
+    @include text-style(3rem,400,#FFFFFF);
+    line-height: 3.1rem;
+    letter-spacing: -1px;
+  }
+
+  &__icon {
+    color: #c6e62f; // bright lime-green like the image
+    font-size: 1.2rem;
+  }
+}
+
+#pattern-9{
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
