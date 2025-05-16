@@ -12,5 +12,10 @@
 
 @use "./layout/main";
 @use "./layout/patners";
+@use "./layout/portfolio";
+@use "./layout/feature";
+@use "./layout/payment";
+@use "./layout/higlights";
+@use "./layout/testimonials";
 
 @use "./pages/home";
