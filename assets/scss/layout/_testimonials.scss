@@ -89,6 +89,9 @@
         @include media-query(768px){
             flex: 0 0 40rem;
         }
+        @include media-query(600px){
+            flex: 0 0 35rem;
+        }
         
 
         &-image {
@@ -102,6 +105,9 @@
             }
             @include media-query(768px){
                 height:20rem ;
+            }
+               @include media-query(600px){
+                height:15rem ;
             }
             img {
                 width: 100%;
@@ -128,6 +134,9 @@
             @include media-query(768px){
                  padding: 3rem 0 0rem 2rem;
             }
+            @include media-query(600px){
+                padding-bottom: 2rem;
+            }
         }
         &-text{
             @include text-style(2.5rem,600,#000000);
@@ -152,6 +161,10 @@
                         @include media-query(1260px){
                 font-size: 1.6rem;
                 
+            }
+            @include media-query(600px){
+                margin-top: 1rem;
+                font-size: 1rem;
             }
             // letter-spacing: -2px;
         }
