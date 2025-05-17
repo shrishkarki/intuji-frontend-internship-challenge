@@ -1,104 +1,95 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
 
-
 .get__started {
-    padding: 0 11.7rem 0 12.3rem;
-    @include media-query(996px){
-        padding: 0 6rem;
-    }
-     @include media-query(768px){
-        padding: 0 3rem;
-    }
+  padding: 0 11.7rem 0 12.3rem;
+  @include media-query(996px) {
+    padding: 0 6rem;
+  }
+  @include media-query(768px) {
+    padding: 0 3rem;
+  }
 
-    &-container{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #3734A9;
-        padding: 10.8rem 0 10rem 0;
-        border-radius: 1rem;
-    }
+  &-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3734a9;
+    padding: 10.8rem 0 10rem 0;
+    border-radius: 1rem;
+  }
 
-    &-title {
-        @include text-style(5.6rem, 800, #FFFFFF);
-        line-height: 6.1rem;
-        max-width: 76.3rem;
-        text-align: center;
-        position: relative;
-        z-index: 100;
-        @include media-query(1280px){
-            font-size: 4rem;
-            line-height: 5rem;
-        }
-        @include media-query(996px){
-            font-size: 3rem;
-            line-height: 4rem;
-        }
+  &-title {
+    @include text-style(5.6rem, 800, #ffffff);
+    line-height: 6.1rem;
+    max-width: 76.3rem;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    @include media-query(1280px) {
+      font-size: 4rem;
+      line-height: 5rem;
     }
-    &-btn{
-        position: relative;
-        z-index: 100;
-        padding: 1.8rem 4.2rem;
-       
-        background-color: #FF7F5C;
-        
-        border-radius: 1rem;
-        border: none;
-        cursor: pointer;
-        @include text-style(1.8rem,700,#FFFFFF);
-        line-height: 3rem;
-        letter-spacing: -0.02rem;
-        margin-top: 4.1rem;
+    @include media-query(996px) {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
+  &-btn {
+    position: relative;
+    z-index: 100;
+    padding: 1.8rem 4.2rem;
 
-        @include media-query(1280px){
-            padding: 1.2rem 2.2rem;
-        }
+    background-color: #ff7f5c;
+
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    @include text-style(1.8rem, 700, #ffffff);
+    line-height: 3rem;
+    letter-spacing: -0.02rem;
+    margin-top: 4.1rem;
+
+    @include media-query(1280px) {
+      padding: 1.2rem 2.2rem;
     }
+  }
 }
 
-#pattern-13{
-position: absolute;
-top: 6rem;
-left: 17.5rem;
-@include media-query(768px){
+#pattern-13 {
+  position: absolute;
+  top: 6rem;
+  left: 17.5rem;
+  @include media-query(768px) {
     display: none;
+  }
 }
-}
-#pattern-14{
+#pattern-14 {
   position: absolute;
   top: 5rem;
-    right: 11.8rem;
-
+  right: 11.8rem;
 }
-#pattern-15{
-    
-    
-      position: absolute;
-      left: 10.8rem;
-      bottom: 4.3rem;
-      
-
-    
+#pattern-15 {
+  position: absolute;
+  left: 10.8rem;
+  bottom: 4.3rem;
 }
-#pattern-16{
-    position: absolute;
-    bottom: 12.2rem;
-    left: 23rem;
-    @include media-query(1280px){
-
-        bottom: 8rem;
-        left: 18rem;
-
-    }
-    @include media-query(600px){
-        display:  none;
-    }
+#pattern-16 {
+  position: absolute;
+  bottom: 12.2rem;
+  left: 23rem;
+  @include media-query(1280px) {
+    bottom: 8rem;
+    left: 18rem;
+  }
+  @include media-query(600px) {
+    display: none;
+  }
 }
-#pattern-17{
-    position: absolute;
-    bottom: 5.3rem;
-    right: 3.6rem;
+#pattern-17 {
+  position: absolute;
+  bottom: 5.3rem;
+  right: 3.6rem;
 }

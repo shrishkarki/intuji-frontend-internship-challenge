@@ -8,8 +8,6 @@ question.forEach((item) => {
         const icon = item.querySelector(".icon img");
         console.log("icon", icon);
 
-
-
         parent.classList.toggle("active");
         if (parent.classList.contains("active")) {
             icon.src = "./assets/icons/minus.png";

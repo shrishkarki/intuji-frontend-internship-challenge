@@ -7,7 +7,7 @@
     @include media-query(1060px) {
         padding: 3.8rem 8rem 0 6rem;
 
-    }
+    } 
 
     @include media-query(996px) {
         padding-right: 6rem;
@@ -37,8 +37,6 @@
             display: none;
            
         }
-
-
     }
 
     &__actions {

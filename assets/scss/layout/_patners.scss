@@ -1,113 +1,106 @@
- @use "../abstracts/variables" as *;
- @use "../abstracts/mixins" as *;
-.partners{
-    background-color: #F5F6F8;
-    &__container{
-        padding: 6.4rem 0 7.686rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        @include media-query(996px){
-            padding: 4rem 0 4rem;
-        }
-        @include media-query(768px){
-            padding-bottom: 1rem;
-        }
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.partners {
+  background-color: #f5f6f8;
+  &__container {
+    padding: 6.4rem 0 7.686rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media-query(996px) {
+      padding: 4rem 0 4rem;
+    }
+    @include media-query(768px) {
+      padding-bottom: 1rem;
+    }
+  }
+  &__title {
+    @include text-style(2.2rem, 500, #000000);
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 3.6rem;
+    transition: transform 0.2s ease-in;
+    &:hover {
+      transform: skew(-15deg);
+    }
+    @include media-query(768px) {
+      font-size: 1.7rem;
+      margin-bottom: 2.8rem;
+    }
+    @include media-query(480px) {
+      padding: 0 2rem;
+      line-height: 3rem;
+      text-align: center;
+    }
+  }
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 4.956rem;
+    @include media-query(996px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @include media-query(830px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include media-query(768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include media-query(500px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media-query(300px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__logo {
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+    &:hover {
+      transform: scale(1.2);
+    }
+    @include media-query(1280px) {
+      width: 10rem;
+    }
+    @include media-query(1060px) {
+      width: 8rem;
+    }
+    @include media-query(996px) {
+      width: 12rem;
+      margin-bottom: 2rem;
+    }
+    @include media-query(768px) {
+      margin-bottom: 3rem;
+    }
+    @include media-query(500px) {
+      height: 2.5rem !important;
+    }
+    @include media-query(300px) {
+      width: 10rem;
+      height: 1.5rem !important;
+    }
 
-        
+    &--1 {
+      height: 2.136rem;
     }
-    &__title{
-        @include text-style(2.2rem,500, #000000);
-        line-height: 100%;
-        letter-spacing: 0%;
-        margin-bottom: 3.6rem;
-         transition: transform 0.2s ease-in;
-         &:hover {
-            transform: skew(-15deg);
-        }
-        @include media-query(768px){
-            font-size: 1.7rem;
-            margin-bottom: 2.8rem;
-        }
-        @include media-query(480px){
-            padding: 0 2rem;
-            line-height: 3rem;
-            text-align: center;
-        }
-       
+    &--2 {
+      height: 1.783rem;
     }
-    &__logos{
-        display: grid;
-        grid-template-columns: repeat(7,1fr);
-         column-gap: 4.956rem;
-         @include media-query(996px){
-            grid-template-columns: repeat(5,1fr);
-           
-         }
-          @include media-query(830px){
-            grid-template-columns: repeat(4,1fr);
-           
-         }
-         @include media-query(768px){
-            grid-template-columns: repeat(3,1fr);
-         }
-        @include media-query(500px){
-            grid-template-columns: repeat(2,1fr);
-         }
-                 @include media-query(300px){
-            grid-template-columns: repeat(1,1fr);
-         }
+    &--3 {
+      height: 2.833rem;
     }
-    &__logo{
-        cursor: pointer;
-         transition: transform 0.2s ease-in;
-         &:hover {
-            transform: scale(1.2);
-        }
-        @include media-query(1280px){
-            width: 10rem;
-        }
-        @include media-query(1060px){
-            width: 8rem;
-        }
-        @include media-query(996px){
-            width: 12rem;
-            margin-bottom: 2rem;
-        }
-        @include media-query(768px){
-            margin-bottom: 3rem;
-            
-        }
-        @include media-query(500px){
-        //    width: 8rem;
-           height: 2.5rem !important;
-        }
-                @include media-query(300px){
-                    width: 10rem;
-            height: 1.5rem !important;
-         }
-      
-                &--1{
-            height: 2.136rem;
-        }
-                &--2{
-            height: 1.783rem;
-        }
-                &--3{
-            height: 2.833rem;
-        }
-                &--4{
-            height: 2.101rem;
-        }
-                &--5{
-            height: 2.496rem;
-        }
-          &--6{
-            height: 2.807rem;
-        }
-          &--7{
-            height: 3.214rem;
-        }
+    &--4 {
+      height: 2.101rem;
     }
+    &--5 {
+      height: 2.496rem;
+    }
+    &--6 {
+      height: 2.807rem;
+    }
+    &--7 {
+      height: 3.214rem;
+    }
+  }
 }

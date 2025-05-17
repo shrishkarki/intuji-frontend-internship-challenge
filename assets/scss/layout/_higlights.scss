@@ -1,200 +1,189 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
 
-
 .highlights {
-    background-color: #C9E7F2;
-    position: relative;
+  background-color: #c9e7f2;
+  position: relative;
 
-    &__container {
-        padding: 14.6rem 11.7rem 13.7rem 11.9rem;
-
-        @include media-query(1170px) {
-
-            padding: 12rem 8rem;
-        }
-
-        @include media-query(768px) {
-            padding: 8rem 5rem;
-        }
-
-        @include media-query(600px) {
-            padding: 4rem 2rem;
-        }
-
-    }
-
-    &__title {
-        @include text-style(7.1rem, 800, #000000);
-        line-height: 6.6rem;
-        letter-spacing: -3%;
-
-        @include media-query(1224px) {
-            font-size: 6rem;
-        }
-
-        @include media-query(1090px) {
-            font-size: 4.5rem;
-            line-height: 5rem;
-        }
-
-        @include media-query(768px) {
-            font-size: 3rem;
-            line-height: 4rem;
-        }
-
-        @include media-query(600px) {
-            font-size: 2.2rem;
-            line-height: 3rem;
-        }
-    }
-
-    &__subtitle {
-        @include text-style(1.6rem, 400, #000000);
-        line-height: 2.9rem;
-        letter-spacing: -2%;
-        max-width: 55.7rem;
-        margin: 3.7rem 0 5.1rem;
-
-        @include media-query(1224px) {
-            margin: 3rem 0 4rem;
-        }
-
-        @include media-query(1090px) {
-            margin: 2rem 0 3rem;
-        }
-
-        @include media-query(768px) {
-            margin: 1rem 0 2rem;
-            font-size: 1.2rem;
-            line-height: 2rem;
-        }
-
-        @include media-query(600px) {
-            font-size: 1rem;
-        }
-    }
-
-    &__grid {
-        display: grid;
-        //   grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 3rem;
-
-        @include media-query(1096px) {
-            column-gap: 1rem;
-        }
-
-        @include media-query(920px) {
-            grid-template-columns: repeat(2, 1fr);
-            row-gap: 1rem;
-
-        }
-
-        @include media-query(600px) {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-    &__card {
-        background-color: #FFFFFF;
-        border-radius: 1rem;
-        border: 1px solid #ABC8D2;
-        padding-left: 3.1rem;
-
-        padding-bottom: 4.3rem;
-        transition: transform 0.2s ease-in;
-        cursor: pointer;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-
-        @include media-query(1090px) {
-            padding-bottom: 2rem;
-        }
-
-
-        &-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 3.2rem;
-
-            @include media-query(920px) {
-                gap: 1rem;
-            }
-        }
-
-        &-icon {
-            margin: 5.3rem 0 3.3rem;
-
-            @include media-query(1170px) {
-                margin: 4rem 0 2rem;
-            }
-
-            @include media-query(1090px) {
-                margin: 2rem 0 1.5rem;
-            }
-
-
-            img {
-                width: 5.528rem;
-                height: 4.5rem;
-            }
-
-        }
-
-        &-title {
-            @include text-style(2.2rem, 800, #000000);
-            line-height: 3.5rem;
-            // margin-bottom: 1.6rem;
-            padding-right: 4.36rem;
-
-            @include media-query(1090px) {
-                font-size: 1.8rem;
-                padding-right: 2rem;
-            }
-        }
-
-        &-description {
-            @include text-style(1.5rem, 400, #000000);
-            line-height: 2.6rem;
-            margin-top: 1.6rem;
-            padding-right: 5.049rem;
-
-            @include media-query(1224px) {
-                padding-right: 3rem;
-            }
-
-            @include media-query(1090px) {
-                padding-right: 2rem;
-                font-size: 1.2rem;
-                line-height: 2rem;
-            }
-
-
-        }
-
-        &--text-only {
-            padding: 4.2rem 0 4.1rem 3.1rem;
-
-            @include media-query(960px) {
-                padding: 2rem, ;
-            }
-        }
-    }
-}
-
-#pattern-8 {
-    position: absolute;
-    bottom: 9.738rem;
+  &__container {
+    padding: 14.6rem 11.7rem 13.7rem 11.9rem;
 
     @include media-query(1170px) {
-        left: -4rem;
+      padding: 12rem 8rem;
+    }
+
+    @include media-query(768px) {
+      padding: 8rem 5rem;
     }
 
     @include media-query(600px) {
-        display: none;
+      padding: 4rem 2rem;
+    }
+  }
+
+  &__title {
+    @include text-style(7.1rem, 800, #000000);
+    line-height: 6.6rem;
+    letter-spacing: -3%;
+
+    @include media-query(1224px) {
+      font-size: 6rem;
     }
 
+    @include media-query(1090px) {
+      font-size: 4.5rem;
+      line-height: 5rem;
+    }
+
+    @include media-query(768px) {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    @include media-query(600px) {
+      font-size: 2.2rem;
+      line-height: 3rem;
+    }
+  }
+
+  &__subtitle {
+    @include text-style(1.6rem, 400, #000000);
+    line-height: 2.9rem;
+    letter-spacing: -2%;
+    max-width: 55.7rem;
+    margin: 3.7rem 0 5.1rem;
+
+    @include media-query(1224px) {
+      margin: 3rem 0 4rem;
+    }
+
+    @include media-query(1090px) {
+      margin: 2rem 0 3rem;
+    }
+
+    @include media-query(768px) {
+      margin: 1rem 0 2rem;
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+
+    @include media-query(600px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+
+    @include media-query(1096px) {
+      column-gap: 1rem;
+    }
+
+    @include media-query(920px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 1rem;
+    }
+
+    @include media-query(600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border: 1px solid #abc8d2;
+    padding-left: 3.1rem;
+
+    padding-bottom: 4.3rem;
+    transition: transform 0.2s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include media-query(1090px) {
+      padding-bottom: 2rem;
+    }
+
+    &-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+
+      @include media-query(920px) {
+        gap: 1rem;
+      }
+    }
+
+    &-icon {
+      margin: 5.3rem 0 3.3rem;
+
+      @include media-query(1170px) {
+        margin: 4rem 0 2rem;
+      }
+
+      @include media-query(1090px) {
+        margin: 2rem 0 1.5rem;
+      }
+
+      img {
+        width: 5.528rem;
+        height: 4.5rem;
+      }
+    }
+
+    &-title {
+      @include text-style(2.2rem, 800, #000000);
+      line-height: 3.5rem;
+      // margin-bottom: 1.6rem;
+      padding-right: 4.36rem;
+
+      @include media-query(1090px) {
+        font-size: 1.8rem;
+        padding-right: 2rem;
+      }
+    }
+
+    &-description {
+      @include text-style(1.5rem, 400, #000000);
+      line-height: 2.6rem;
+      margin-top: 1.6rem;
+      padding-right: 5.049rem;
+
+      @include media-query(1224px) {
+        padding-right: 3rem;
+      }
+
+      @include media-query(1090px) {
+        padding-right: 2rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+    }
+
+    &--text-only {
+      padding: 4.2rem 0 4.1rem 3.1rem;
+
+      @include media-query(960px) {
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+#pattern-8 {
+  position: absolute;
+  bottom: 9.738rem;
+
+  @include media-query(1170px) {
+    left: -4rem;
+  }
+
+  @include media-query(600px) {
+    display: none;
+  }
 }

@@ -2,158 +2,148 @@
 @use "../abstracts/variables" as *;
 
 .faq {
-    position: relative;
-    padding: 0 11.7rem 15rem 11.9rem;
-    @include media-query(1160px){
-         padding: 0 5rem 10rem 5rem;
+  position: relative;
+  padding: 0 11.7rem 15rem 11.9rem;
+  @include media-query(1160px) {
+    padding: 0 5rem 10rem 5rem;
+  }
+
+  &__content {
+    display: flex;
+    column-gap: 4.8rem;
+    @include media-query(996px) {
+      column-gap: 1.5rem;
     }
-
-    &__content {
-        display: flex;
-        column-gap: 4.8rem;
-        @include media-query(996px){
-            column-gap: 1.5rem;
-        }
-        @include media-query(768px){
-            flex-direction: column;
-            align-items: center;
-            row-gap: 4rem;
-        }
+    @include media-query(768px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 4rem;
     }
-    &__list{
-        // width: 75.1rem;
-        width: 100%;
-        max-width: 75.1rem;
+  }
+  &__list {
+    width: 100%;
+    max-width: 75.1rem;
+  }
+
+  &__title {
+    @include text-style(7.1rem, 800, #000000);
+    max-width: 58rem;
+    letter-spacing: -0.02rem;
+    margin-bottom: 7.1rem;
+    line-height: 7.6rem;
+    @include media-query(1280px) {
+      font-size: 5rem;
+      margin-bottom: 6rem;
     }
-
-    &__title {
-        @include text-style(7.1rem, 800, #000000);
-        max-width: 58rem;
-        letter-spacing: -0.02rem;
-        margin-bottom: 7.1rem;
-        line-height: 7.6rem;
-         @include media-query(1280px){
-                font-size: 5rem;
-                margin-bottom: 6rem;     
-
-            }
-            @include media-query(996px){
-                font-size: 3.5rem;
-                margin-bottom: 3rem;
-            }
-            @include media-query(700px){
-                font-size: 2.5rem;
-                margin-bottom: 1.5rem;
-            }
-
+    @include media-query(996px) {
+      font-size: 3.5rem;
+      margin-bottom: 3rem;
     }
-
-    &__item {
-        display: block;
-        border: 1px solid #CFCFCF;
-        border-radius: 1rem;
-        padding: 2.5rem 2.7rem 0rem 2.3rem;
-        background-color: #FFFFFF;
-       
-        overflow: hidden;
-        &:not(:last-child){
-             margin-bottom: 1.5rem;
-        }
-
-
+    @include media-query(700px) {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
     }
+  }
 
-    &__item.active &__answer {
+  &__item {
+    display: block;
+    border: 1px solid #cfcfcf;
+    border-radius: 1rem;
+    padding: 2.5rem 2.7rem 0rem 2.3rem;
+    background-color: #ffffff;
 
-        max-height: 50rem;
-        opacity: 1;
-        padding-bottom: 2.4rem;
+    overflow: hidden;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
     }
+  }
 
-    &__question {
-        @include text-style(2.2rem, 800, #000000);
-        line-height: 2.2rem;
-        margin-bottom: 2.3rem;
-    
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-        @include media-query(1024px){
-            font-size: 1.6rem;
-            margin-bottom: 1.3rem;
-        }
-    }
+  &__item.active &__answer {
+    max-height: 50rem;
+    opacity: 1;
+    padding-bottom: 2.4rem;
+  }
 
-    &__answer {
-       
-        @include text-style(1.6rem, 400, #000000);
-        line-height: 3.1rem;
-        letter-spacing: -0.02rem;
-        max-width: 64.4rem;
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease, opacity 0.4s ease;
-        @include media-query(1024px){
-                font-size: 1.2rem;
-                line-height: 2rem;
-        }
-    }
-    &__contact{
-        padding: 3.2rem;
-        background-color: #FFFFFF;
-        border: 1px solid #CFCFCF;
-        border-radius: 1rem;
-         width: 100%;
-        max-width: 40.1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        // text-align: center;
+  &__question {
+    @include text-style(2.2rem, 800, #000000);
+    line-height: 2.2rem;
+    margin-bottom: 2.3rem;
 
-        &-title{
-            @include text-style(2.2rem,800,#000000);
-            margin: 4.3rem 0 2.3rem;
-            line-height: 2.2rem;
-            
-        }
-        &-description{
-            @include text-style(1.6rem,600,#000000);
-            line-height: 3.1rem;
-            letter-spacing: -0.02rem;
-            max-width: 33.3rem;
-            text-align: center;
-            
-        }
-        &-button{
-            @include text-style(1.6rem,600,#FFFFFF);
-            line-height: 3.1rem;
-            padding: 2.2rem 0;
-            text-align: center;
-            width: 100%;
-            background-color: #FF7F5C;
-            letter-spacing: -0.02rem;
-          
-            margin-top: auto;
-        }
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    @include media-query(1024px) {
+      font-size: 1.6rem;
+      margin-bottom: 1.3rem;
     }
+  }
+
+  &__answer {
+    @include text-style(1.6rem, 400, #000000);
+    line-height: 3.1rem;
+    letter-spacing: -0.02rem;
+    max-width: 64.4rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    @include media-query(1024px) {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+  &__contact {
+    padding: 3.2rem;
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 40.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // text-align: center;
+
+    &-title {
+      @include text-style(2.2rem, 800, #000000);
+      margin: 4.3rem 0 2.3rem;
+      line-height: 2.2rem;
+    }
+    &-description {
+      @include text-style(1.6rem, 600, #000000);
+      line-height: 3.1rem;
+      letter-spacing: -0.02rem;
+      max-width: 33.3rem;
+      text-align: center;
+    }
+    &-button {
+      @include text-style(1.6rem, 600, #ffffff);
+      line-height: 3.1rem;
+      padding: 2.2rem 0;
+      text-align: center;
+      width: 100%;
+      background-color: #ff7f5c;
+      letter-spacing: -0.02rem;
+
+      margin-top: auto;
+    }
+  }
 }
 
-
-#pattern-10{
-    position: absolute;
-    top: 10rem;
-    left: 0;
+#pattern-10 {
+  position: absolute;
+  top: 10rem;
+  left: 0;
 }
-#pattern-11{
-    position: absolute;
-    top: 0;
-    right: 0;
-    @include media-query(996px){
-        top: -8rem;
-    }
-    @include media-query(620px){
-        display: none;
-    }
+#pattern-11 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @include media-query(996px) {
+    top: -8rem;
+  }
+  @include media-query(620px) {
+    display: none;
+  }
 }
