@@ -24,6 +24,7 @@ html {
 body {
   font-family: "Manrope", sans-serif;
   background-color: #fafbff;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -91,14 +92,14 @@ body {
 }
 .navbar__link--signup {
   padding: 1.7rem 3.6rem;
-  background-color: #4F46BA;
-  color: #FFFFFF;
+  background-color: #4f46ba;
+  color: #ffffff;
   margin-left: 5rem;
   cursor: pointer;
 }
 .navbar__link--signup:hover {
   background-color: #5044d3;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media (max-width: 996px) {
   .navbar__link--signup {
@@ -185,8 +186,8 @@ body {
 
 .start {
   padding: 1.7rem 3.6rem;
-  background-color: #4F46BA;
-  color: #FFFFFF;
+  background-color: #4f46ba;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -509,6 +510,7 @@ body.menu-open {
   background-color: #c9e7f2;
   overflow-y: hidden;
   position: relative;
+  overflow-x: hidden;
 }
 
 .partners {
