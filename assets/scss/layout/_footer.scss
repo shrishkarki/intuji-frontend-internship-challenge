@@ -1,0 +1,115 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+
+.footer{
+    padding: 15rem 11.7rem 5.8rem 12.1rem;
+    @include media-query(996px){
+        padding-top: 8rem;
+    }
+        @include media-query(768px){
+        padding: 5rem 5rem;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        row-gap: 4rem;
+       
+        flex-wrap: wrap
+    }
+    &__column{
+         min-width: 21rem;
+    }
+    &__logo{
+        @include text-style(2.1rem,700,#000000);
+        margin-bottom: 1.8rem;
+        letter-spacing: -0.02rem;
+
+    }
+    &__heading{
+        @include text-style(2.1rem,700,#000000);
+        margin-bottom: 1.8rem;
+        letter-spacing: -0.02rem;
+    }
+    &__description{
+        @include text-style(1.6rem,500,#757095);
+        line-height: 2.8rem;
+        letter-spacing: -0.02rem;
+        margin-bottom: 3.2rem;
+
+    }
+    &__socials{
+        display: flex;
+       column-gap: 1.6rem;
+       
+    }
+    &__item{
+          @include text-style(1.6rem,500,#181433);
+        line-height: 2.4rem;
+        letter-spacing: -0.02rem;
+        
+    }
+    &__list{
+        &-company{
+            li{
+                margin-bottom: 1.8rem;
+            }
+        }
+        &-resources{
+            li{
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+
+    &__form{
+        width: 100%;
+        
+    }
+    &__input{
+        padding: 1.3rem 3.5rem;
+        background-color: #EEEEFF;
+         border: none;
+          @include text-style(1.6rem,500,#181433);
+        line-height: 2.6rem;
+        letter-spacing: -0.02rem;
+  outline: none;
+  opacity: 0.5;
+
+    }
+    &__button{
+        padding: 1.3rem 4.2rem;
+        background-color: #3734A9;
+        @include text-style(1.6rem,500,#FFFFFF);
+        line-height: 2.6rem;
+        letter-spacing: -0.02rem;
+        border:0;
+        outline: none;
+        transform: translateX(-2px);
+        @include media-query(520px){
+            margin-top: 2rem;
+        }
+        
+    }
+    &__note{
+        @include text-style(1.6rem,500,#181433);
+        line-height: 2.6rem;
+        letter-spacing: -0.04rem;
+        opacity: 0.5;
+        max-width: 32.9rem;
+        margin-top: 2.1rem;
+    }
+    &__divider{
+        border-top: 2px solid #E5E5EA;
+        width: 100%;
+        margin: 5.9rem 0 4rem;
+    }
+    &__copyright{
+         @include text-style(1.6rem,400,#181433);
+        line-height: 2.6rem;
+        letter-spacing: -0.04rem;
+        text-align: center;
+    }
+    
+}

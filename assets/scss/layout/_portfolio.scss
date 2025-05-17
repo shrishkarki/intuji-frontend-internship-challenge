@@ -4,27 +4,31 @@
 .portfolio {
     &__container {
         display: flex;
-        
+
         padding: 7.1rem 15rem 7.1rem 11.9rem;
-        // column-gap: 12.3rem;
         column-gap: 20.9rem;
-        @include media-query(1280px){
+
+
+        @include media-query(1280px) {
             column-gap: 2rem;
         }
-        @include media-query(1100px){
+
+        @include media-query(1100px) {
             padding: 5rem 8rem;
         }
-        @include media-query(960px){
+
+        @include media-query(960px) {
             padding: 5rem 6rem;
         }
-        @include media-query(860px){
-            flex-direction: column;
-           align-items: center;
-           row-gap: 5rem;
-           justify-content: center
 
+        @include media-query(860px) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 5rem;
+            justify-content: center
         }
-        @include media-query(600px){
+
+        @include media-query(600px) {
             padding: 2rem 2rem;
         }
     }
@@ -32,32 +36,45 @@
     &__title {
         @include text-style(5.6rem, $font-weight-bold, #000000);
         line-height: 6.6rem;
-        // letter-spacing: -3px;
+
         max-width: 56rem;
-        // max-width: 64.6rem;
+
         margin-bottom: 1.9rem;
-        @include media-query(1060px){
+
+        transition: transform 0.2s ease-in;
+         &:hover {
+            transform: skew(-10deg);
+        }
+
+        @include media-query(1060px) {
             font-size: 4rem;
             line-height: 5rem;
         }
-        @include media-query(860px){
+
+        @include media-query(860px) {
             text-align: center;
-            
+
         }
-        @include media-query(600px){
+
+        @include media-query(600px) {
             font-size: 3rem;
             line-height: 4rem;
-            margin-bottom:1rem; 
+            margin-bottom: 1rem;
         }
     }
 
     &__description {
         @include text-style(1.6rem, 400, #000000);
         max-width: 44.9rem;
-            @include media-query(860px){
+         transition: transform 0.2s ease-in;
+         &:hover {
+            transform: skew(-10deg);
+        }
+
+        @include media-query(860px) {
             text-align: center;
             max-width: fit-content;
-           
+
         }
     }
 
@@ -66,7 +83,7 @@
         background-color: rgba(#C4C4C4C4, 0.3);
         border-radius: 2rem;
         max-width: 40.2rem;
-       
+
         position: relative;
 
 
@@ -84,13 +101,13 @@
     &__backticks {
         position: absolute;
         top: -1.8rem;
-        
-       
-        
+
+
+
         padding: 1rem 1rem;
         border-radius: 50%;
-        
+
         background-color: #000000;
-        
+
     }
 }

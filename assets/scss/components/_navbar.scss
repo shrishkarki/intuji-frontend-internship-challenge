@@ -54,13 +54,24 @@
     }
 
     &__link {
+        
+
 
 
         @include text-style($font-size-sm, $font-weight-regular, #000000);
-
+        &:hover{
+               
+                color: #5044d3;
+            }
         @include media-query(768px) {
             font-size: 2rem;
             padding-bottom: 1000rem;
+        }
+        &--signin{
+            &:hover{
+               
+                color: #5044d3;
+            }
         }
 
         &--signup {
@@ -68,11 +79,21 @@
             background-color: #4F46BA;
             color: #FFFFFF;
             margin-left: 5rem;
+            cursor: pointer;
+             &:hover{
+               
+                background-color: #5044d3;
+                 color: #FFFFFF;
+            }
 
             @include media-query(996px) {
                 margin-left: 2.5rem;
                 padding: 1.2rem 2.6rem;
             }
+        }
+        &-icon{
+            transform: translateY(-2px);
+            margin-left: 0.4rem;
         }
 
     }
@@ -81,9 +102,13 @@
 
         display: none;
         font-size: 1.4rem;
+       
         position: absolute;
         top: 100%;
         left: 0;
+        &-item{
+            margin: 1rem 0.3rem;
+        }
     }
 
     &__item--dropdown:hover &__dropdown {
@@ -166,6 +191,7 @@
             background-color: #4F46BA;
             color: #FFFFFF;
             text-align: center;
+           
             
         }
         .backdrop {

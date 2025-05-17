@@ -4,10 +4,21 @@
 .faq {
     position: relative;
     padding: 0 11.7rem 15rem 11.9rem;
+    @include media-query(1160px){
+         padding: 0 5rem 10rem 5rem;
+    }
 
     &__content {
         display: flex;
         column-gap: 4.8rem;
+        @include media-query(996px){
+            column-gap: 1.5rem;
+        }
+        @include media-query(768px){
+            flex-direction: column;
+            align-items: center;
+            row-gap: 4rem;
+        }
     }
     &__list{
         // width: 75.1rem;
@@ -21,6 +32,19 @@
         letter-spacing: -0.02rem;
         margin-bottom: 7.1rem;
         line-height: 7.6rem;
+         @include media-query(1280px){
+                font-size: 5rem;
+                margin-bottom: 6rem;     
+
+            }
+            @include media-query(996px){
+                font-size: 3.5rem;
+                margin-bottom: 3rem;
+            }
+            @include media-query(700px){
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
 
     }
 
@@ -54,6 +78,10 @@
         display: flex;
         justify-content: space-between;
         cursor: pointer;
+        @include media-query(1024px){
+            font-size: 1.6rem;
+            margin-bottom: 1.3rem;
+        }
     }
 
     &__answer {
@@ -66,6 +94,10 @@
         opacity: 0;
         overflow: hidden;
         transition: max-height 0.4s ease, opacity 0.4s ease;
+        @include media-query(1024px){
+                font-size: 1.2rem;
+                line-height: 2rem;
+        }
     }
     &__contact{
         padding: 3.2rem;
@@ -118,4 +150,10 @@
     position: absolute;
     top: 0;
     right: 0;
+    @include media-query(996px){
+        top: -8rem;
+    }
+    @include media-query(620px){
+        display: none;
+    }
 }

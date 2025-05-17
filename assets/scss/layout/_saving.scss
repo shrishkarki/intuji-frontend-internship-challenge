@@ -145,6 +145,9 @@
         @include media-query(600px){
             padding: 4rem 0;;
         }
+                @include media-query(395px){
+             background-color: transparent
+        }
 
     }
 
@@ -208,6 +211,7 @@
 
 
 
+
         &-title {
             @include text-style(1.975rem, 500, #000000);
             line-height: 100%;
@@ -255,6 +259,9 @@
     grid-template-columns: 27.74px 27.74px 27.74px 27.74px 27.74px 27.74px 27.74px 27.74px 27.74px;
     column-gap: 5.55px;
     text-align: center;
+    @include media-query(480px){
+         grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    }
 }
 
 .base>div:first-child {
@@ -279,6 +286,9 @@
 
 .vertical div {
     width: 27.74px;
+    @include media-query(480px){
+        width: 20px;
+    }
 }
 
 .data {
@@ -291,6 +301,9 @@
     width: 27.74px;
     background-color: #E8F2FF;
     border-radius: 4.16px 4.16px 0 0;
+     @include media-query(480px){
+        width: 20px;
+    }
 }
 
 #sunday {
