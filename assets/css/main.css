@@ -1057,6 +1057,37 @@ body.menu-open {
   display: flex;
   column-gap: 20.6rem;
 }
+@media (max-width: 1358px) {
+  .saving {
+    padding: 18rem 10rem 9.6rem;
+    column-gap: 15rem;
+  }
+}
+@media (max-width: 1280px) {
+  .saving {
+    padding: 12rem 10rem 9.6rem;
+    column-gap: 10rem;
+  }
+}
+@media (max-width: 1024px) {
+  .saving {
+    column-gap: 10rem;
+    padding: 2rem 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .saving {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .saving__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .saving__subtitle {
   font-size: 1.4rem;
   font-weight: 700;
@@ -1126,6 +1157,11 @@ body.menu-open {
   position: relative;
   margin-top: 5.5rem;
 }
+@media (max-width: 768px) {
+  .saving__review {
+    align-self: center;
+  }
+}
 .saving__review-text {
   font-size: 1.5rem;
   font-weight: 600;
@@ -1148,10 +1184,16 @@ body.menu-open {
 .saving__visual {
   background-color: #DBF1FA;
   border-radius: 1rem;
-  width: 48.6rem;
+  width: 100%;
+  max-width: 48.6rem;
   display: flex;
   align-items: flex-end;
   position: relative;
+}
+@media (max-width: 600px) {
+  .saving__visual {
+    padding: 4rem 0;
+  }
 }
 .saving__card {
   height: 63rem;
@@ -1160,6 +1202,27 @@ body.menu-open {
   position: absolute;
   top: -13.6rem;
   left: -3rem;
+}
+@media (max-width: 1280px) {
+  .saving__card {
+    position: static;
+    height: 55rem;
+  }
+}
+@media (max-width: 1080px) {
+  .saving__card {
+    height: 47rem;
+  }
+}
+@media (max-width: 996px) {
+  .saving__card {
+    height: 40rem;
+  }
+}
+@media (max-width: 600px) {
+  .saving__card {
+    display: none;
+  }
 }
 .saving__card img {
   max-height: 100%;
@@ -1176,9 +1239,25 @@ body.menu-open {
   border-radius: 1rem;
   box-shadow: 0px 89.89px 64.98px 0px rgba(0, 0, 0, 0.0235294118);
 }
+@media (max-width: 1280px) {
+  .saving__balance {
+    left: -5rem;
+  }
+}
+@media (max-width: 768px) {
+  .saving__balance {
+    left: 8rem;
+  }
+}
+@media (max-width: 600px) {
+  .saving__balance {
+    position: static;
+    margin: 0 auto;
+  }
+}
 .saving__balance-title {
   font-size: 1.975rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
   line-height: 100%;
   margin-bottom: 0.767rem;
@@ -1203,6 +1282,11 @@ body.menu-open {
   position: absolute;
   top: 5rem;
   left: -4.5rem;
+}
+@media (max-width: 600px) {
+  #pattern-12 {
+    display: none;
+  }
 }
 
 .chart {
