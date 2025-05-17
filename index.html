@@ -2,526 +2,606 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <script src="./assets/JS/hamburger.js" defer></script>
-    <script src="./assets/JS/slider.js" defer></script>
-    <script src="./assets/JS/collapse.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="./assets/JS/hamburger.js" defer></script>
+  <script src="./assets/JS/slider.js" defer></script>
+  <script src="./assets/JS/collapse.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
+  <div class="container">
 
-        <main class="main-content">
-            <div class="backdrop"></div>
-            <header class="navbar">
-                <nav class="navbar__container">
-                    <a href="#" class="navbar__logo"><img src="./assets/images/AR Shakir.png" /></a>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navbar__menu">
+    <main class="main-content">
+      <div class="backdrop"></div>
+      <header class="navbar">
+        <nav class="navbar__container">
+          <a href="#" class="navbar__logo"><img src="./assets/images/AR Shakir.png" /></a>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navbar__menu">
 
-                        <li class="navbar__item navbar__item--dropdown">
-                            <a href="#" class="navbar__link">Product <img src="./assets/icons/dropdown.svg" /></a>
-                            <ul class="navbar__dropdown">
-                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Prod</a>
-                                </li>
-                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Prod</a>
-                                </li>
-                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Prod</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="navbar__item navbar__item--dropdown">
-                            <a href="#" class="navbar__link">Template <img src="./assets/icons/dropdown.svg" /></a>
-                            <ul class="navbar__dropdown">
-                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Temp</a>
-                                </li>
-                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Temp</a>
-                                </li>
-                                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Temp</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Blog</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Pricing</a></li>
-                    </ul>
-                    <div class="navbar__actions">
-                        <a href="#" class="navbar__link navbar__link--signin">Sign In</a>
-                        <a href="#" class="navbar__link navbar__link--signup">Start Free</a>
-                    </div>
-                </nav>
+            <li class="navbar__item navbar__item--dropdown">
+              <a href="#" class="navbar__link">Product <img src="./assets/icons/dropdown.svg" /></a>
+              <ul class="navbar__dropdown">
+                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Prod</a>
+                </li>
+                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Prod</a>
+                </li>
+                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Prod</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item navbar__item--dropdown">
+              <a href="#" class="navbar__link">Template <img src="./assets/icons/dropdown.svg" /></a>
+              <ul class="navbar__dropdown">
+                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Temp</a>
+                </li>
+                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Temp</a>
+                </li>
+                <li class="navbar__dropdown-item"><a href="#" class="navbar__dropdown-link">Temp</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Blog</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Pricing</a></li>
+          </ul>
+          <div class="navbar__actions">
+            <a href="#" class="navbar__link navbar__link--signin">Sign In</a>
+            <a href="#" class="navbar__link navbar__link--signup">Start Free</a>
+          </div>
+        </nav>
 
-                <!-- mobile menu -->
+        <!-- mobile menu -->
 
-                <div class="mobile-menu">
-                    <a href="#">Product</a>
-                    <a href="#">Template</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Pricing</a>
-                    <hr style="margin-bottom: 2rem;">
-                    <a href="#">Sign In</a>
-                    <a href="#" class="start">Start Free</a>
-                </div>
-            </header>
-            <section class="hero">
-                <div class="hero__container">
-                    <div class="hero__content">
-                        <h1 class="hero__title">Managing freelance payments has never been easier</h1>
-                        <p class="hero__description">Yet bed any for travelling assistance indulgence unpleasing. Not
-                            thoughts all exercise blessing.</p>
-                        <div class="hero__buttons">
-                            <a href="#" class="hero__button hero__button--primary">Get Started</a>
-                            <a href="#" class="hero__button ">
-                                <span class="hero__button--polygon">
-                                    <img src="./assets/images/Polygon 2.png" />
-                                </span><span class="hero__button--secondary">See How it Works</span></a>
-                        </div>
-
-                        <ul class="hero__checked">
-                            <li class="hero__checked-item">
-                                <span class="hero__checked-rightTick"><img src="./assets/icons/rightTick.png"
-                                        alt="Check Icon" class="hero__checked-icon" /></span>
-                                <span class="hero__checked-text">Free Register</span>
-                            </li>
-                            <li class="hero__checked-item">
-                                <span class="hero__checked-rightTick"><img src="./assets/icons/rightTick.png"
-                                        alt="Check Icon" class="hero__checked-icon" /></span>
-                                <span class="hero__checked-text">Great Service</span>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="hero__image">
-                        <img src="./assets/images/Group 686.png" alt="Hero Image" class="hero__image-img" />
-                    </div>
-
-                </div>
-            </section>
-
-            <div id="pattern1"><img src="./assets/images/pattern1.png" alt="pattern 1" /></div>
-            <div id="pattern2"><img src="./assets/images/pattern2.png" alt="pattern 2" /></div>
-            <div id="pattern3"><img src="./assets/images/pattern3.png" alt="pattern 3" /></div>
-        </main>
-
-        <section class="partners">
-            <div class="partners__container">
-                <h2 class="partners__title">
-                    Over 32k+ software businesses growing with AR Shakir.
-                </h2>
-                <div class="partners__logos">
-                    <img src="./assets/images/Group (1).png" alt="Company 1 Logo"
-                        class="partners__logo partners__logo--1" />
-                    <img src="./assets/images/Group.png" alt="Company 2 Logo"
-                        class="partners__logo partners__logo--2" />
-                    <img src="./assets/images/Group (2).png" alt="Company 3 Logo"
-                        class="partners__logo partners__logo--3" />
-                    <img src="./assets/images/Group (3).png" alt="Company 4 Logo"
-                        class="partners__logo partners__logo--4" />
-                    <img src="./assets/images/Group (4).png" alt="Company 5 Logo"
-                        class="partners__logo partners__logo--5" />
-                    <img src="./assets/images/Group (5).png" alt="Company 6 Logo"
-                        class="partners__logo partners__logo--6" />
-                    <img src="./assets/images/Group (6).png" alt="Company 7 Logo"
-                        class="partners__logo partners__logo--7" />
-
-                </div>
-            </div>
-        </section>
-        <section class="portfolio">
-            <div class="portfolio__container">
-                <div class="portfolio__content">
-                    <h1 class="portfolio__title">Automated
-                        portfolio tracking</h1>
-                    <p class="portfolio__description">Yet bed any for travelling assistance indulgence unpleasing. Not
-                        thoughts all exercise blessing. </p>
-
-                </div>
-                <div class="portfolio__review">
-                    <div class="portfolio__backticks">
-                        <img src="./assets/icons/backticks.png" />
-                    </div>
-                    <p class="portfolio__review-text">Wise busy past both park when an ye no. Nay likely her length
-                        sooner thrown sex lively income. The expense windows adapted sir. Wrong widen.</p>
-                    <p class="portfolio__review-author">- Mike Taylor, <span class="porfolio__review-role">Web
-                            Designer</span></p>
-                </div>
-
+        <div class="mobile-menu">
+          <a href="#">Product</a>
+          <a href="#">Template</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+          <hr style="margin-bottom: 2rem;">
+          <a href="#">Sign In</a>
+          <a href="#" class="start">Start Free</a>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Managing freelance payments has never been easier</h1>
+            <p class="hero__description">Yet bed any for travelling assistance indulgence unpleasing. Not
+              thoughts all exercise blessing.</p>
+            <div class="hero__buttons">
+              <a href="#" class="hero__button hero__button--primary">Get Started</a>
+              <a href="#" class="hero__button ">
+                <span class="hero__button--polygon">
+                  <img src="./assets/images/Polygon 2.png" />
+                </span><span class="hero__button--secondary">See How it Works</span></a>
             </div>
 
-    <!-- </div> -->
+            <ul class="hero__checked">
+              <li class="hero__checked-item">
+                <span class="hero__checked-rightTick"><img src="./assets/icons/rightTick.png" alt="Check Icon"
+                    class="hero__checked-icon" /></span>
+                <span class="hero__checked-text">Free Register</span>
+              </li>
+              <li class="hero__checked-item">
+                <span class="hero__checked-rightTick"><img src="./assets/icons/rightTick.png" alt="Check Icon"
+                    class="hero__checked-icon" /></span>
+                <span class="hero__checked-text">Great Service</span>
+              </li>
+            </ul>
+
+          </div>
+          <div class="hero__image">
+            <img src="./assets/images/Group 686.png" alt="Hero Image" class="hero__image-img" />
+          </div>
+
+        </div>
+      </section>
+
+      <div id="pattern1"><img src="./assets/images/pattern1.png" alt="pattern 1" /></div>
+      <div id="pattern2"><img src="./assets/images/pattern2.png" alt="pattern 2" /></div>
+      <div id="pattern3"><img src="./assets/images/pattern3.png" alt="pattern 3" /></div>
+    </main>
+
+    <section class="partners">
+      <div class="partners__container">
+        <h2 class="partners__title">
+          Over 32k+ software businesses growing with AR Shakir.
+        </h2>
+        <div class="partners__logos">
+          <img src="./assets/images/Group (1).png" alt="Company 1 Logo" class="partners__logo partners__logo--1" />
+          <img src="./assets/images/Group.png" alt="Company 2 Logo" class="partners__logo partners__logo--2" />
+          <img src="./assets/images/Group (2).png" alt="Company 3 Logo" class="partners__logo partners__logo--3" />
+          <img src="./assets/images/Group (3).png" alt="Company 4 Logo" class="partners__logo partners__logo--4" />
+          <img src="./assets/images/Group (4).png" alt="Company 5 Logo" class="partners__logo partners__logo--5" />
+          <img src="./assets/images/Group (5).png" alt="Company 6 Logo" class="partners__logo partners__logo--6" />
+          <img src="./assets/images/Group (6).png" alt="Company 7 Logo" class="partners__logo partners__logo--7" />
+
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio__container">
+        <div class="portfolio__content">
+          <h1 class="portfolio__title">Automated
+            portfolio tracking</h1>
+          <p class="portfolio__description">Yet bed any for travelling assistance indulgence unpleasing. Not
+            thoughts all exercise blessing. </p>
+
+        </div>
+        <div class="portfolio__review">
+          <div class="portfolio__backticks">
+            <img src="./assets/icons/backticks.png" />
+          </div>
+          <p class="portfolio__review-text">Wise busy past both park when an ye no. Nay likely her length
+            sooner thrown sex lively income. The expense windows adapted sir. Wrong widen.</p>
+          <p class="portfolio__review-author">- Mike Taylor, <span class="porfolio__review-role">Web
+              Designer</span></p>
+        </div>
+
+      </div>
+
+      <!-- </div> -->
 
     </section>
 
     <!-- features card -->
     <section class="feature-cards">
-        <div class="feature-card">
-            <div class="feature-card__number">01</div>
-            <div class="feature-card__icon feature-card__icon--blue"><img src="./assets/icons/feature2 (3).png"
-                    alt=" feature1" /></div>
-            <div class="feature-card__info">
-                <h3 class="feature-card__title">Connect wallets & companies</h3>
-                <p class="feature-card__description">Indulgence way everything joy alteration boisterous the attachment.
-                    Party we years to order allow asked of.</p>
-            </div>
+      <div class="feature-card">
+        <div class="feature-card__number">01</div>
+        <div class="feature-card__icon feature-card__icon--blue"><img src="./assets/icons/feature2 (3).png"
+            alt=" feature1" /></div>
+        <div class="feature-card__info">
+          <h3 class="feature-card__title">Connect wallets & companies</h3>
+          <p class="feature-card__description">Indulgence way everything joy alteration boisterous the attachment.
+            Party we years to order allow asked of.</p>
         </div>
+      </div>
 
-        <div class="feature-card">
-            <div class="feature-card__number">02</div>
-            <div class="feature-card__icon feature-card__icon--orange"><img src="./assets/icons/feature2 (2).png"
-                    alt=" feature2" /></div>
+      <div class="feature-card">
+        <div class="feature-card__number">02</div>
+        <div class="feature-card__icon feature-card__icon--orange"><img src="./assets/icons/feature2 (2).png"
+            alt=" feature2" /></div>
 
-            <div class="feature-card__info">
+        <div class="feature-card__info">
 
-                <h3 class="feature-card__title">Review transactions</h3>
-                <p class="feature-card__description">Indulgence way everything joy alteration boisterous the attachment.
-                    Party we years to order allow asked of.</p>
-            </div>
+          <h3 class="feature-card__title">Review transactions</h3>
+          <p class="feature-card__description">Indulgence way everything joy alteration boisterous the attachment.
+            Party we years to order allow asked of.</p>
         </div>
+      </div>
 
-        <div class="feature-card">
-            <div class="feature-card__number">03</div>
-            <div class="feature-card__icon feature-card__icon--yellow"><img src="./assets/icons/feature2 (1).png"
-                    alt=" feature3" /></div>
-            <div class="feature-card__info">
+      <div class="feature-card">
+        <div class="feature-card__number">03</div>
+        <div class="feature-card__icon feature-card__icon--yellow"><img src="./assets/icons/feature2 (1).png"
+            alt=" feature3" /></div>
+        <div class="feature-card__info">
 
-                <h3 class="feature-card__title">Get income insights</h3>
-                <p class="feature-card__description">Indulgence way everything joy alteration boisterous the attachment.
-                    Party we years to order allow asked of.</p>
-            </div>
+          <h3 class="feature-card__title">Get income insights</h3>
+          <p class="feature-card__description">Indulgence way everything joy alteration boisterous the attachment.
+            Party we years to order allow asked of.</p>
         </div>
+      </div>
     </section>
+
+
+
 
 
     <!-- payment -->
 
     <section class="payment">
-        <div class="payment__transactions">
-            <div class="transaction transaction--first">
-                <img src="./assets/images/user1.png" alt="User" class="transaction__image">
-                <div class="transaction__details">
-                    <p class="transaction__amount">+ $28,900</p>
-                    <p class="transaction__description">Received from Michael V</p>
-                </div>
-            </div>
-            <div class="transaction transaction--second">
-                <img src="./assets/images/user2.png" alt="User" class="transaction__image">
-                <div class="transaction__details">
-                    <p class="transaction__amount">+ $28,900</p>
-                    <p class="transaction__description">Received from Michael V</p>
-                </div>
-            </div>
-            <div class="transaction transaction--third">
-                <img src="./assets/images/user3.png" alt="User" class="transaction__image">
-                <div class="transaction__details">
-                    <p class="transaction__amount">+ $28,900</p>
-                    <p class="transaction__description">Received from Michael V</p>
-                </div>
-            </div>
-            <div class="transaction transaction--fourth">
-                <img src="./assets/images/user4.png" alt="User" class="transaction__image">
-                <div class="transaction__details">
-                    <p class="transaction__amount">+ $28,900</p>
-                    <p class="transaction__description">Received from Michael V</p>
-                </div>
-            </div>
-            <div id="pattern-4"><img src="./assets/images/pattern4.png" alt="patter4" /></div>
-            <div id="pattern-5"><img src="./assets/images/pattern5.png" alt="pattern5" /></div>
-            <div id="pattern-6"><img src="./assets/images/pattern6.png" alt="pattern6" /></div>
-            <div id="pattern-7"><img src="./assets/images/pattern7.png" alt="pattern7" /></div>
+      <div class="payment__transactions">
+        <div class="transaction transaction--first">
+          <img src="./assets/images/user1.png" alt="User" class="transaction__image">
+          <div class="transaction__details">
+            <p class="transaction__amount">+ $28,900</p>
+            <p class="transaction__description">Received from Michael V</p>
+          </div>
         </div>
-        <!-- </div> -->
+        <div class="transaction transaction--second">
+          <img src="./assets/images/user2.png" alt="User" class="transaction__image">
+          <div class="transaction__details">
+            <p class="transaction__amount">+ $28,900</p>
+            <p class="transaction__description">Received from Michael V</p>
+          </div>
+        </div>
+        <div class="transaction transaction--third">
+          <img src="./assets/images/user3.png" alt="User" class="transaction__image">
+          <div class="transaction__details">
+            <p class="transaction__amount">+ $28,900</p>
+            <p class="transaction__description">Received from Michael V</p>
+          </div>
+        </div>
+        <div class="transaction transaction--fourth">
+          <img src="./assets/images/user4.png" alt="User" class="transaction__image">
+          <div class="transaction__details">
+            <p class="transaction__amount">+ $28,900</p>
+            <p class="transaction__description">Received from Michael V</p>
+          </div>
+        </div>
+        <div id="pattern-4"><img src="./assets/images/pattern4.png" alt="patter4" /></div>
+        <div id="pattern-5"><img src="./assets/images/pattern5.png" alt="pattern5" /></div>
+        <div id="pattern-6"><img src="./assets/images/pattern6.png" alt="pattern6" /></div>
+        <div id="pattern-7"><img src="./assets/images/pattern7.png" alt="pattern7" /></div>
+      </div>
+      <!-- </div> -->
 
-        <div class="transaction__info">
-            <h6 class="transaction__subtitle">why choose us</h6>
-            <h2 class="transaction__title">Track your payments on the go with the best way possible</h2>
-            <p class="transaction__text">Indulgence way everything joy alteration boisterous the attachment. Party we
-                years to order allow asked of.</p>
-            <div class="transaction__divider"></div>
-            <ul class="transaction__benefits">
-                <li class="transaction__benefit">
-                    <span class="transaction__benefit-rightTick"><img src="./assets/icons/rightTick.png"
-                            alt="Check Icon" class="transaction__benefit-icon" /></span>
-                    <span class="transaction__benefit-text">Get Overview at a glance</span>
-                </li>
-                <li class="transaction__benefit">
-                    <span class="transaction__benefit-rightTick"><img src="./assets/icons/rightTick.png"
-                            alt="Check Icon" class="transaction__benefit-icon" /></span>
-                    <span class="transaction__benefit-text">Deoposit funds easily, securlity</span>
-                    
-                </li>
-                <li class="transaction__benefit">
-                    <span class="transaction__benefit-rightTick"><img src="./assets/icons/rightTick.png"
-                            alt="Check Icon" class="transaction__benefit-icon" /></span>
-                    <span class="transaction__benefit-text">Get Live Support</span>
-                </li>
-            </ul>
+      <div class="transaction__info">
+        <h6 class="transaction__subtitle">why choose us</h6>
+        <h2 class="transaction__title">Track your payments on the go with the best way possible</h2>
+        <p class="transaction__text">Indulgence way everything joy alteration boisterous the attachment. Party we
+          years to order allow asked of.</p>
+        <div class="transaction__divider"></div>
+        <ul class="transaction__benefits">
+          <li class="transaction__benefit">
+            <span class="transaction__benefit-rightTick"><img src="./assets/icons/rightTick.png" alt="Check Icon"
+                class="transaction__benefit-icon" /></span>
+            <span class="transaction__benefit-text">Get Overview at a glance</span>
+          </li>
+          <li class="transaction__benefit">
+            <span class="transaction__benefit-rightTick"><img src="./assets/icons/rightTick.png" alt="Check Icon"
+                class="transaction__benefit-icon" /></span>
+            <span class="transaction__benefit-text">Deoposit funds easily, securlity</span>
+
+          </li>
+          <li class="transaction__benefit">
+            <span class="transaction__benefit-rightTick"><img src="./assets/icons/rightTick.png" alt="Check Icon"
+                class="transaction__benefit-icon" /></span>
+            <span class="transaction__benefit-text">Get Live Support</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- saving -->
+
+    <section class="saving">
+      <div class="saving__content">
+        <h4 class="saving__subtitle">Why choose us</h5>
+          <h2 class="saving__title">Save money with proper transaction</h2>
+          <p class="saving__description">
+            We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor
+            convinced residence own.
+          </p>
+          <div class="saving__review">
+            <div class="saving__backticks">
+              <img src="./assets/icons/backticks.png" />
+            </div>
+            <p class="saving__review-text">Wise busy past both park when an ye no. Nay likely her length
+              sooner thrown sex lively income. The expense windows adapted sir. Wrong widen.</p>
+            <p class="saving__review-author">- Mike Taylor, <span class="porfolio__review-role">Web
+                Designer</span></p>
+          </div>
+      </div>
+      <div class="saving__visual">
+        <div class="saving__card">
+          <img src="./assets/images/hand.png" alt="Credit Card" class="saving__card-image">
         </div>
+        <div class="saving__balance">
+          <h3 class="saving__balance-title">Total Balance</h3>
+          <p class="saving__balance-amount">$4,200 <span class="saving__balance-change">+14%</span></p>
+          <div class="saving__balance-chart">
+           
+
+            <div class="chart">
+              <div class="vertical">
+
+                <div>10k</div>
+                <div>4k</div>
+                <div>2k</div>
+                <div>0</div>
+              </div>
+              <div class="data">
+                <div class="days" id="sunday"></div>
+                <div class="days" id="monday"></div>
+                <div class="days" id="tuesday"></div>
+                <div class="days" id="wednesday"></div>
+                <div class="days" id="thursday"></div>
+                <div class="days" id="friday"></div>
+                <div class="days" id="saturday"></div>
+                <div class="days" id="sunday-again"></div>
+              </div>
+
+            </div>
+            <div class="base">
+              <div>0</div>
+              <div>S</div>
+              <div>M</div>
+              <div>T</div>
+              <div>W</div>
+              <div>T</div>
+              <div>F</div>
+              <div>S</div>
+              <div>S</div>
+            </div>
+          </div>
+        </div>
+        <div id="pattern-12"><img src="./assets/images/pattern12.png" alt="pattern12"/></div>
+      </div>
     </section>
 
     <!-- highlights -->
-     <section class="highlights">
-  <div class="highlights__container">
-    <header class="highlights__header">
-      <h2 class="highlights__title">Features that blows mind</h2>
-      <p class="highlights__subtitle">
-        We so opinion friends me message as delight. Whole front do of plate heard oh ought.
-        His defective nor convinced residence own.
-      </p>
-    </header>
+    <section class="highlights">
+      <div class="highlights__container">
+        <header class="highlights__header">
+          <h2 class="highlights__title">Features that blows mind</h2>
+          <p class="highlights__subtitle">
+            We so opinion friends me message as delight. Whole front do of plate heard oh ought.
+            His defective nor convinced residence own.
+          </p>
+        </header>
 
-    <div class="highlights__grid">
-      <!-- Highlight Card 1 -->
-      <article class="highlights__card">
-        <div class="highlights__card-icon">
-         <img src="./assets/icons/feature2 (1).png"/>
+        <div class="highlights__grid">
+          <!-- Highlight Card 1 -->
+          <article class="highlights__card">
+            <div class="highlights__card-icon">
+              <img src="./assets/icons/feature2 (1).png" />
+            </div>
+            <h3 class="highlights__card-title">Really boy law county she unable her sister</h3>
+            <p class="highlights__card-description">
+              We so opinion friends me message as delight. Whole front do of plate heard oh ought.
+            </p>
+          </article>
+
+          <!-- Highlight Card 2 -->
+          <article class="highlights__card">
+            <div class="highlights__card-icon">
+              <img src="./assets/icons/feature2 (3).png" /></span>
+            </div>
+            <h3 class="highlights__card-title">Among sex are leave law built now</h3>
+            <p class="highlights__card-description">
+              We so opinion friends me message as delight. Whole front do of plate heard oh ought.
+            </p>
+          </article>
+
+          <!-- Highlight Card 3 -->
+          <div class="highlights__card-stack">
+
+            <article class="highlights__card highlights__card--text-only">
+              <h3 class="highlights__card-title">Merits behind on afraid or warmly</h3>
+            </article>
+
+            <!-- Highlight Card 4 -->
+            <article class="highlights__card highlights__card--text-only">
+              <h3 class="highlights__card-title">Believing neglected so so allowance existence</h3>
+            </article>
+          </div>
         </div>
-        <h3 class="highlights__card-title">Really boy law county she unable her sister</h3>
-        <p class="highlights__card-description">
-          We so opinion friends me message as delight. Whole front do of plate heard oh ought.
-        </p>
-      </article>
-
-      <!-- Highlight Card 2 -->
-      <article class="highlights__card">
-        <div class="highlights__card-icon">
-          <img src="./assets/icons/feature2 (3).png"/></span>
-        </div>
-        <h3 class="highlights__card-title">Among sex are leave law built now</h3>
-        <p class="highlights__card-description">
-          We so opinion friends me message as delight. Whole front do of plate heard oh ought.
-        </p>
-      </article>
-
-      <!-- Highlight Card 3 -->
-       <div class="highlights__card-stack">
-
-           <article class="highlights__card highlights__card--text-only">
-             <h3 class="highlights__card-title">Merits behind on afraid or warmly</h3>
-           </article>
-     
-           <!-- Highlight Card 4 -->
-           <article class="highlights__card highlights__card--text-only">
-             <h3 class="highlights__card-title">Believing neglected so so allowance existence</h3>
-           </article>
-       </div>
-    </div>
-</div>
-<div id="pattern-8"><img src="./assets/images/pattern8.png" alt="pattern8"/></div>
-</section>
+      </div>
+      <div id="pattern-8"><img src="./assets/images/pattern8.png" alt="pattern8" /></div>
+    </section>
 
 
-<!-- testimonials -->
+    <!-- testimonials -->
 
-<section class="testimonials">
-  <div class="testimonials__container">
-    <header class="testimonials__header">
-        <div class="testimonials__content">
+    <section class="testimonials">
+      <div class="testimonials__container">
+        <header class="testimonials__header">
+          <div class="testimonials__content">
 
             <h2 class="testimonials__title">Testimonials</h2>
             <p class="testimonials__subtitle">
-              We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own.
+              We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor
+              convinced residence own.
             </p>
+          </div>
+          <div class="testimonials__wave"><img src="./assets/images/wave.png" alt="wave" /></div>
+        </header>
+
+        <div class="testimonials__list">
+          <article class="testimonials__card">
+            <div class="testimonials__card-icon"><img src="./assets/icons/backticks.png" alt="baclticks" /></div>
+            <div class="testimonials__card-content">
+              <p class="testimonials__card-text">
+                Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The
+                expense windows. Blessing welcomed ladyship.
+              </p>
+              <p class="testimonials__card-author">- Mike Taylor, Web Designer</p>
+            </div>
+            <div class="testimonials__card-image">
+              <img src="./assets/images/girl.png" alt="Mike Taylor - Web Designer" />
+            </div>
+          </article>
+
+          <article class="testimonials__card">
+            <div class="testimonials__card-icon"><img src="./assets/icons/backticks.png" alt="baclticks" /></div>
+            <div class="testimonials__card-content">
+              <p class="testimonials__card-text">
+                Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The
+                expense windows. Blessing welcomed ladyship.
+              </p>
+              <p class="testimonials__card-author">- Mike Taylor, Web Designer</p>
+            </div>
+            <div class="testimonials__card-image">
+              <img src="./assets/images/boy.png" alt="Mike Taylor - Web Designer" />
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="testimonials__card">
+            <div class="testimonials__card-icon"><img src="./assets/icons/backticks.png" alt="baclticks" /></div>
+            <div class="testimonials__card-content">
+              <p class="testimonials__card-text">
+                Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The
+                expense windows. Blessing welcomed ladyship.
+              </p>
+              <p class="testimonials__card-author">- Mike Taylor, Web Designer</p>
+            </div>
+            <div class="testimonials__card-image">
+              <img src="./assets/images/girl.png" alt="Mike Taylor - Web Designer" />
+            </div>
+          </article>
         </div>
-      <div class="testimonials__wave"><img src="./assets/images/wave.png" alt="wave"/></div>
-    </header>
+        <!-- Slider Controls -->
+        <div class="testimonials__slider">
 
-    <div class="testimonials__list">
-      <article class="testimonials__card">
-        <div class="testimonials__card-icon"><img src="./assets/icons/backticks.png" alt="baclticks"/></div>
-        <div class="testimonials__card-content">
-          <p class="testimonials__card-text">
-            Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The expense windows. Blessing welcomed ladyship.
-          </p>
-          <p class="testimonials__card-author">- Mike Taylor, Web Designer</p>
+          <button class="testimonials__slider-btn" data-index="0"></button>
+          <button class="testimonials__slider-btn" data-index="1"></button>
+          <button class="testimonials__slider-btn" data-index="2"></button>
         </div>
-        <div class="testimonials__card-image">
-          <img src="./assets/images/girl.png" alt="Mike Taylor - Web Designer" />
-        </div>
-      </article>
-
- <article class="testimonials__card">
-        <div class="testimonials__card-icon"><img src="./assets/icons/backticks.png" alt="baclticks"/></div>
-        <div class="testimonials__card-content">
-          <p class="testimonials__card-text">
-            Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The expense windows. Blessing welcomed ladyship.
-          </p>
-          <p class="testimonials__card-author">- Mike Taylor, Web Designer</p>
-        </div>
-        <div class="testimonials__card-image">
-          <img src="./assets/images/boy.png" alt="Mike Taylor - Web Designer" />
-        </div>
-      </article>
-
-      <!-- 3 -->
-       <article class="testimonials__card">
-        <div class="testimonials__card-icon"><img src="./assets/icons/backticks.png" alt="baclticks"/></div>
-        <div class="testimonials__card-content">
-          <p class="testimonials__card-text">
-            Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income. The expense windows. Blessing welcomed ladyship.
-          </p>
-          <p class="testimonials__card-author">- Mike Taylor, Web Designer</p>
-        </div>
-        <div class="testimonials__card-image">
-          <img src="./assets/images/girl.png" alt="Mike Taylor - Web Designer" />
-        </div>
-      </article>
-    </div>
-    <!-- Slider Controls -->
-     <div class="testimonials__slider">
-
-         <button class="testimonials__slider-btn" data-index="0"></button>
-         <button class="testimonials__slider-btn" data-index="1"></button>
-         <button class="testimonials__slider-btn" data-index="2"></button>
-     </div>
-  </div>
-
-
-</section>
-
-<!-- stats -->
-
-<section class="stats">
-  <div class="stats__intro">
-    <p class="stats__title">We speak with our powerful statistics</p>
-  </div>
-
-  <div class="stats__data">
-    <div class="stats__item stats__item--one">
-      <h3 class="stats__value">1M+</h3>
-      <div class="stats__label">
-        <span class="stats__icon"><img src="./assets/images/user.png"/></span>
-        <span class="stats__text">Active Users</span>
       </div>
-    </div>
 
-    <div class="stats__item stats__item--two">
-      <h3 class="stats__value">30K+</h3>
-      <div class="stats__label">
-        <span class="stats__icon"><img src="./assets/images/star.png"/></span>
-        <span class="stats__text">5-Stars Reviews</span>
+
+    </section>
+
+    <!-- stats -->
+
+    <section class="stats">
+      <div class="stats__intro">
+        <p class="stats__title">We speak with our powerful statistics</p>
       </div>
-    </div>
 
-    <div class="stats__item stats__item--three">
-      <h3 class="stats__value">$252M</h3>
-      <div class="stats__label">
-        <span class="stats__icon"><img src="./assets/images/star.png"/></span>
-        <span class="stats__text">Transactions</span>
+      <div class="stats__data">
+        <div class="stats__item stats__item--one">
+          <h3 class="stats__value">1M+</h3>
+          <div class="stats__label">
+            <span class="stats__icon"><img src="./assets/images/user.png" /></span>
+            <span class="stats__text">Active Users</span>
+          </div>
+        </div>
+
+        <div class="stats__item stats__item--two">
+          <h3 class="stats__value">30K+</h3>
+          <div class="stats__label">
+            <span class="stats__icon"><img src="./assets/images/star.png" /></span>
+            <span class="stats__text">5-Stars Reviews</span>
+          </div>
+        </div>
+
+        <div class="stats__item stats__item--three">
+          <h3 class="stats__value">$252M</h3>
+          <div class="stats__label">
+            <span class="stats__icon"><img src="./assets/images/star.png" /></span>
+            <span class="stats__text">Transactions</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div id="pattern-9"><img src="./assets/images/pattern9.png" alt="pattern9"/></div>
-</section>
+      <div id="pattern-9"><img src="./assets/images/pattern9.png" alt="pattern9" /></div>
+    </section>
 
-<!-- blog -->
+    <!-- blog -->
 
-<section class="blogs">
-  <div class="blogs__container">
-    <h2 class="blogs__heading">Recent Blogs</h2>
+    <section class="blogs">
+      <div class="blogs__container">
+        <h2 class="blogs__heading">Recent Blogs</h2>
 
-    <article class="blogs__featured">
-      <div class="blogs__content">
-        <span class="blogs__category">Best Practices</span>
-        <h3 class="blogs__title">
-          In design active temper be uneasy. Thirty for remove plenty regard.
-        </h3>
-        <a href="#" class="blogs__readmore">Read More &nbsp;<img src="./assets/icons/arrow.png" alt="readmore arrow"/></a>
+        <article class="blogs__featured">
+          <div class="blogs__content">
+            <span class="blogs__category">Best Practices</span>
+            <h3 class="blogs__title">
+              In design active temper be uneasy. Thirty for remove plenty regard.
+            </h3>
+            <a href="#" class="blogs__readmore">Read More &nbsp;<img src="./assets/icons/arrow.png"
+                alt="readmore arrow" /></a>
+          </div>
+          <div class="blogs__image">
+            <img src="./assets/images/blog1.png" alt="Team standing in front of building" />
+          </div>
+        </article>
+
+        <div class="blogs__grid">
+          <article class="blogs__card">
+            <div class="blogs__card-content">
+              <span class="blogs__category">Best Practices</span>
+              <h3 class="blogs__card-title">Partiality on or continuing particular principles as.</h3>
+            </div>
+            <div class="blogs__card-image">
+              <img src="./assets/images/blog2.png" alt="Two professionals discussing work" />
+            </div>
+          </article>
+
+          <article class="blogs__card">
+            <div class="blogs__card-content">
+              <span class="blogs__category">Best Practices</span>
+              <h3 class="blogs__card-title">Village did removed enjoyed explain</h3>
+            </div>
+            <div class="blogs__card-image">
+              <img src="./assets/images/blog3.png" alt="Sunset reflecting off modern buildings" />
+            </div>
+          </article>
+
+          <article class="blogs__card">
+            <div class="blogs__card-content">
+              <span class="blogs__category">Best Practices</span>
+              <h3 class="blogs__card-title">Wise busy past both park when an ye no. Nay likely her length.</h3>
+            </div>
+            <div class="blogs__card-image">
+              <img src="./assets/images/blog4.png" alt="Hands pointing at tablet screen" />
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="blogs__image">
-        <img src="./assets/images/blog1.png" alt="Team standing in front of building" />
-      </div>
-    </article>
+    </section>
 
-    <div class="blogs__grid">
-      <article class="blogs__card">
-        <div class="blogs__card-content">
-          <span class="blogs__category">Best Practices</span>
-          <h3 class="blogs__card-title">Partiality on or continuing particular principles as.</h3>
-        </div>
-        <div class="blogs__card-image">
-          <img src="./assets/images/blog2.png" alt="Two professionals discussing work" />
-        </div>
-      </article>
-
-      <article class="blogs__card">
-        <div class="blogs__card-content">
-          <span class="blogs__category">Best Practices</span>
-          <h3 class="blogs__card-title">Village did removed enjoyed explain</h3>
-        </div>
-        <div class="blogs__card-image">
-          <img src="./assets/images/blog3.png" alt="Sunset reflecting off modern buildings" />
-        </div>
-      </article>
-
-      <article class="blogs__card">
-        <div class="blogs__card-content">
-          <span class="blogs__category">Best Practices</span>
-          <h3 class="blogs__card-title">Wise busy past both park when an ye no. Nay likely her length.</h3>
-        </div>
-        <div class="blogs__card-image">
-          <img src="./assets/images/blog4.png" alt="Hands pointing at tablet screen" />
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!--FAQ  -->
-  <section class="faq">
+    <!--FAQ  -->
+    <section class="faq">
       <h2 class="faq__title">Frequently asked questions</h2>
-    <div class="faq__content">
-      <div class="faq__list">
-        <div class="faq__item active">
-          <div class="faq__question" aria-expanded="false">The expense windows adapted sir. Wrong widen drawn? <span class="icon"><img src="./assets/icons/minus.png" alt=" plus"/></span></div>
-          <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. </div>
-        </div>
+      <div class="faq__content">
+        <div class="faq__list">
+          <div class="faq__item active">
+            <div class="faq__question" aria-expanded="false">The expense windows adapted sir. Wrong widen drawn? <span
+                class="icon"><img src="./assets/icons/minus.png" alt=" plus" /></span></div>
+            <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing
+              welcomed ladyship she met humoured sir breeding her. </div>
+          </div>
 
-        <div class="faq__item">
-          <div class="faq__question" aria-expanded="false">Six curiosity day assurance bed necessary? <span class="icon"><img src="./assets/icons/plus.png" alt=" plus"/></span></div>
-           <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. </div>
-        </div>
+          <div class="faq__item">
+            <div class="faq__question" aria-expanded="false">Six curiosity day assurance bed necessary? <span
+                class="icon"><img src="./assets/icons/plus.png" alt=" plus" /></span></div>
+            <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing
+              welcomed ladyship she met humoured sir breeding her. </div>
+          </div>
 
-        <div class="faq__item">
-          <div class="faq__question" aria-expanded="false">Produce say the ten moments parties? <span class="icon"><img src="./assets/icons/plus.png" alt=" plus"/></span></div>
-         <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. </div>
-        </div>
+          <div class="faq__item">
+            <div class="faq__question" aria-expanded="false">Produce say the ten moments parties? <span
+                class="icon"><img src="./assets/icons/plus.png" alt=" plus" /></span></div>
+            <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing
+              welcomed ladyship she met humoured sir breeding her. </div>
+          </div>
 
-        <div class="faq__item">
-          <div class="faq__question" aria-expanded="false">Simple innate summer fat appear basket his desire joy? <span class="icon"><img src="./assets/icons/plus.png" alt=" plus"/></span></div>
-           <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. </div>
-        </div>
+          <div class="faq__item">
+            <div class="faq__question" aria-expanded="false">Simple innate summer fat appear basket his desire joy?
+              <span class="icon"><img src="./assets/icons/plus.png" alt=" plus" /></span></div>
+            <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing
+              welcomed ladyship she met humoured sir breeding her. </div>
+          </div>
 
-             <div class="faq__item">
-          <div class="faq__question" aria-expanded="false">Outward clothes promise at gravity do excited? <span class="icon"><img src="./assets/icons/plus.png" alt=" plus"/></span></div>
-           <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her. </div>
+          <div class="faq__item">
+            <div class="faq__question" aria-expanded="false">Outward clothes promise at gravity do excited? <span
+                class="icon"><img src="./assets/icons/plus.png" alt=" plus" /></span></div>
+            <div class="faq__answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing
+              welcomed ladyship she met humoured sir breeding her. </div>
+          </div>
         </div>
+        <aside class="faq__contact">
+          <div class="faq__contact-icon"><img src="./assets/icons/Bookmark.png" alt="more question" /></div>
+          <h3 class="faq__contact-title">Do you have more questions?</h3>
+          <p class="faq__contact-description">End-to-end payments and financial management in a single solution. Meet
+            the right platform to help realize.</p>
+          <div class="faq__contact-button">Shoot a Direct Mail</div>
+        </aside>
       </div>
-      <aside class="faq__contact">
-        <div class="faq__contact-icon"><img src="./assets/icons/Bookmark.png" alt="more question"/></div>
-      <h3 class="faq__contact-title">Do you have more questions?</h3>
-      <p class="faq__contact-description">End-to-end payments and financial management in a single solution. Meet the right platform to help realize.</p>
-      <div class="faq__contact-button">Shoot a Direct Mail</div>
-    </aside>
-    </div>
-    <div id="pattern-10"><img src="./assets/images/pattern10.png" alt="pattern10"/></div>
-    <div id="pattern-11"><img src="./assets/images/pattern11.png" alt="pattern11"/></div>
+      <div id="pattern-10"><img src="./assets/images/pattern10.png" alt="pattern10" /></div>
+      <div id="pattern-11"><img src="./assets/images/pattern11.png" alt="pattern11" /></div>
 
-    
-  </section>
+
+    </section>
 
 
 
-    </div>
+  </div>
 
 </body>
 
